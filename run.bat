@@ -1,0 +1,1 @@
+C:\Automation\myworkspace\Ecartapp1.0>mvnd test

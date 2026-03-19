@@ -1,0 +1,12 @@
+pageObjects\LoginPage1.class
+pageObjects\RegisterPage.class
+pageObjects\SignupPage1.class
+pageObjects\HomePage.class
+testCases\T0002_Login.class
+testBase\BaseClass.class
+testCases\Logintest1.class
+pageObjects\BasePage.class
+pageObjects\SignupPage.class
+pageObjects\LoginPageEcart.class
+testCases\RegisterTest.class
+testCases\T0001_SignUp.class
