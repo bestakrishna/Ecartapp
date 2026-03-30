@@ -1,1 +1,8 @@
-2026-03-17 22:58:48 INFO  T0002_Login:17 - Test start here
+2026-03-30 18:20:29 INFO  TC002_LoginTest:16 - ****Login test Started****
+2026-03-30 18:20:39 INFO  TC002_LoginTest:50 - *******Finished login**********
+2026-03-30 18:21:01 INFO  TC001_RegisterTest:21 - *************Starting the test*************
+2026-03-30 18:21:02 INFO  TC001_RegisterTest:24 - Clicked on my account link
+2026-03-30 18:21:08 INFO  TC001_RegisterTest:29 - Providing Customer details
+2026-03-30 21:37:52 INFO  TC002_LoginTest:16 - ****Login test Started****
+2026-03-30 21:38:01 INFO  TC002_LoginTest:50 - *******Finished login**********
+2026-03-30 21:39:44 INFO  TC002_LoginTest:16 - ****Login test Started****

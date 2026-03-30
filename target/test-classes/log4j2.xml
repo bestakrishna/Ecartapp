@@ -11,7 +11,7 @@
         </Console>
 
         <RollingFile name="File" fileName="${log-path}/automation.log"
-                     filePattern="${log-path}/automation-%d{MM-dd-yyyy}-%i.log.gz">
+                     filePattern="${log-path}/automation-%d{MM-dd-yyyy}-%i.log.gz"><!-- TIME STRAMP-->
             <PatternLayout pattern="${log-pattern}"/>
             <Policies>
                 <TimeBasedTriggeringPolicy/>
@@ -22,7 +22,7 @@
     </Appenders>
 <!-- what type logs need to genarate ex All<Trace<Debug<Info<Warn<Error<Fatal<Off-->
     <Loggers>
-        <Root level="INFO">
+        <Root level="Debug">
             <!--<AppenderRef ref="Console"/>-->
             <AppenderRef ref="File"/>
         </Root>

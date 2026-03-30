@@ -1,6 +1,5 @@
 package pageObjects;
 
-import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -13,11 +12,7 @@ public RegisterPage(WebDriver driver){//we will pass parameter from the testcase
 		
 	}
 		//Locators
-@FindBy(xpath="//*[@id=\"top-links\"]/ul/li[2]/a/span[2]")
-WebElement btn_Myacc;
 
-@FindBy(xpath="//a[normalize-space()='Register']")
-WebElement btn_Reg;
 	
 @FindBy(xpath="//*[@id=\"input-firstname\"]")
 WebElement txt_userfstname;
@@ -48,19 +43,16 @@ WebElement chk_box;
 
 @FindBy(xpath="//*[@id=\"content\"]/form/div/div/input[2]")
 WebElement btn_conti;
+
+@FindBy(xpath="//*[@id=\"content\"]/h1")
+WebElement msgConfirmation;
 	 
 	
 	// Action methods 
 	// creating the methods for each action
 	// this will internally invoke the elaments and  perform the actions
 	
-public void Myaccount() {
-	btn_Myacc.click();
-}
 
-public void Register() {
-	btn_Reg.click();
-}
 
 public void FirstName(String userfstnm) {
 	txt_userfstname.sendKeys(userfstnm);
@@ -97,6 +89,18 @@ public void NewsLetterYes() {
  
  public void Continue() {
 	 btn_conti.click();
+	 
+ }
+ //validating the msg
+ 
+ public String getConfirmationMsg() {
+	 try{
+		 return (msgConfirmation.getText());
+		 }
+	 catch(Exception e) {
+		 
+		 return(e.getMessage());
+	 }
 	 
  }
 
